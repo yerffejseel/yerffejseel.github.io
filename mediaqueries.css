@@ -1,4 +1,7 @@
 @media screen and (max-width:1400px) {
+    #projects {
+        margin-top: 350px;
+    }
     #profile {
         height: 83vh;
         margin-bottom: 6rem; 
@@ -14,14 +17,15 @@
     }
     .text-container {
         text-align: justify;
-        width: 80vw;
+        width: 65vw;
+    } 
+    #profile .section__pic-container {
+        text-align: center;
     }
 }
 
 @media screen and (max-width:1200px) {
-    #projects {
-        margin-top: 250px;
-    }
+
     #desktop-nav{
         display:none;
     }
@@ -53,11 +57,20 @@
     }
 
     .about-containers {
-        margin-top: 100px;
+        margin-top: 50px;
     }
+    .details-container {
+        padding:10px;
+        margin-left:80px;
+        margin-right:80px;
+    }
+    
 }
 
 @media screen and (max-width:600px) {
+    #projects {
+        margin-top: 30rem;
+    }
     #contact,
     footer {
         height: 40vh;
@@ -80,11 +93,14 @@
     }
 
     .about-details-container {
-        margin-top: 0px;
+        margin-top: 0;
     }
 
     .contact-info-container {
         margin: 0;
+    }
+    .contact-info-upper-container{
+        margin:20px;
     }
     .contact-info-container p, .nav-links li a {
         font-size: 1rem;
@@ -117,6 +133,26 @@
 
     .section-container {
         margin-top: 20px;
+    }
+
+    #experience .experience-details-container .details-container:first-child {
+        height: 37rem;
+    }
+
+    #experience .experience-details-container .details-container:nth-child(2) {
+        height:350px;
+    }
+    #about .section__pic-container {
+        width: 300px;
+        height: 300px;
+    }
+    .article-container {
+        width: 300px;
+        height: 300px;
+    }  
+    .project-img {
+        width: 80%;
+        height:80%;
     }
 
 }

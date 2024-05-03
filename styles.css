@@ -335,6 +335,7 @@ section {
     flex-direction: column;
     align-items: center;
     display: flex;
+    margin:4rem;
 }
 
 .article-container {
@@ -367,16 +368,25 @@ article .icon {
 }
 
 #experience .details-container {
-    height: 325px;
+    height: 355px;
 }
 
 #projects {
     position: relative;
 }
 
+#projects .details-container {
+    height: 30rem;
+}
+
+.projects-container {
+    display:flex;
+    justify-content: center;
+}
+
 .project-img {
     width: 350px;
-    height: auto;
+    height: 350px;
     border-radius: 2rem;
 }
 
@@ -397,6 +407,7 @@ article .icon {
 
 #contact {
     display:flex;
+    margin-top: 30rem;
     justify-content: center;
     flex-direction: column;
     height: 70vh;

@@ -407,7 +407,7 @@ article .icon {
 
 #contact {
     display:flex;
-    margin-top: 30rem;
+    margin-top: 10rem;
     justify-content: center;
     flex-direction: column;
     height: 70vh;

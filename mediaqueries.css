@@ -20,8 +20,8 @@
         height:fit-content
     }
     .text-container {
-        text-align: justify;
-        width: 65vw;
+        text-align: left;
+        width: 80vw;
     } 
     #profile .section__pic-container {
         text-align: center;
@@ -86,6 +86,7 @@
     }
     article {
         font-size: 1rem;
+        justify-content: left;
     }
     footer nav {
         height:fit-content;

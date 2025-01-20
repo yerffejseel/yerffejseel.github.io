@@ -9,12 +9,33 @@
     .projects-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    #description {
+        width: 450px;
+    }
 }
 
 /* Tablets and Small Laptops (992px and down) */
 @media screen and (max-width: 992px) {
     .container {
         max-width: 720px;
+    }
+
+    #bio {
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: 1rem;
+        align-items: center;
+    }
+
+    #description {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    #about-pic {
+        height: 350px;
+        width: 290px;
     }
 
     .hero h1 {
@@ -36,9 +57,22 @@
 
 /* Tablets (768px and down) */
 @media screen and (max-width: 768px) {
+    #title {
+        font-size: 50pt;
+    }
+
+    #subtitle {
+        font-size: 20pt;
+    }
+
     .container {
         max-width: 540px;
         padding: 0 1.5rem;
+    }
+
+    #about-pic {
+        height: 300px;
+        width: 250px;
     }
 
     .hero h1 {
@@ -70,8 +104,21 @@
 
 /* Large Phones (576px and down) */
 @media screen and (max-width: 576px) {
+    #title {
+        font-size: 35pt;
+    }
+
+    #subtitle {
+        font-size: 15pt;
+    }
+
     .container {
         padding: 0 1rem;
+    }
+
+    #about-pic {
+        height: 280px;
+        width: 230px;
     }
 
     .hero h1 {
@@ -196,3 +243,4 @@
         color: black;
     }
 }
+

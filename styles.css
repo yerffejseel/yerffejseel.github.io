@@ -29,14 +29,6 @@ h2 {
     color: #1a202c;
 }
 
-#title {
-    font-size: 65pt;
-}
-
-#subtitle {
-    font-size: 25pt;
-}
-
 /* Hero Section */
 .hero {
     min-height: 100vh;
@@ -74,6 +66,36 @@ h2 {
     max-width: 800px;
 }
 
+@keyframes fadeToWhite {
+    0% {
+        opacity: 0;
+        color: #4f46e5; 
+    }
+    100% {
+        opacity: 1;
+        color: white;
+    }
+}
+
+/* Update hero title animation */
+#title {
+    font-size: 65pt;
+    animation: fadeToWhite 1.5s ease-in-out forwards;
+}
+
+#subtitle {
+    font-size: 25pt;
+    animation: fadeToWhite 1.5s ease-in-out 0.3s forwards; /* 0.3s delay */
+    opacity: 0; /* Start hidden */
+}
+
+/* Remove these elements from the general hidden class animation if they exist */
+#title.hidden,
+#subtitle.hidden {
+    opacity: 1; /* Override the general hidden class */
+    transform: none; /* Remove any transform */
+    transition: none; /* Remove transition */
+}
 /* Projects Section */
 .projects {
     padding: 5rem 0;
@@ -240,13 +262,14 @@ footer {
     transition: all 1s;
 }
 
-/* Class to apply when element should be visible */
+
 .show {
     opacity: 1;
     transform: translateY(0);
 }
 
-/* Optional: Add different delays for multiple elements */
+
+
 .delay-1 { transition-delay: 200ms; }
 .delay-2 { transition-delay: 400ms; }
 .delay-3 { transition-delay: 600ms; }

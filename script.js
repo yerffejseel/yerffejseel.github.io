@@ -10,6 +10,12 @@ const observer = new IntersectionObserver((entries) => {
 
 // Get all elements you want to animate
 window.addEventListener('DOMContentLoaded', () => {
+    //Animate title
+    const title = document.getElementById('title');
+    const subtitle = document.getElementById('subtitle');
+    title.classList.remove('hidden');
+    subtitle.classList.remove('hidden');
+    
     // Animate project cards
     document.querySelectorAll('.project-card').forEach((card, index) => {
         card.classList.add('hidden', `delay-${index + 1}`);

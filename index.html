@@ -21,9 +21,30 @@
         <div class="container" id="bio">
             <div id="description">
                 <h2>About Me</h2>
-                <p>Hello! I'm Jeffrey Lee, an intended Computer Science student at the University of Washington with a passion for software engineering. I am proficient in multiple frontend and backend tools. I've worked on various projects, from web development to algorithmic challenges. My goal is to build a successful career in software engineering, developing projects while continuously learning and growing in this dynamic field.</p>
+                <p>Hello! I'm Jeffrey Lee, a Computer Science student at the University of Washington with a passion for software engineering. As a junior at UW, I've gotten the opportunity to explore a variety of topics, including frontend, backend, cloud, and ML topics. Besides coding, I enjoy going to the gym, going on walks, eating good food, and playing basketball! </p>
             </div>
             <img src="./assets/about-me picture.jpeg" alt="About Me Picture" id="about-pic">
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div class="experience-title">
+                        <h3>Software Development Engineer Intern</h3>
+                        <div class="company">Amazon</div>
+                    </div>
+                    <div class="experience-date">June 2025 - Present</div>
+                </div>
+                <ul class="experience-achievements">
+                    <li>Developing automated scaling solutions on Scaling Planner team to optimize AWS resource allocation, while creating AI-powered assistant that enhanced service diagnosis workflows, achieving 50% adoption among service-owners</li>
+                    <li>Implemented Python Lambda orchestrator to power the AI assistant, implementing an RAG pipeline that synthesizes Scaling Planner documentation and operational data with Claude LLM, achieving 80% accuracy in contextual responses</li>
+                    <li>Designed data ingestion system to process and vectorize information from 7+ microservices, transforming CloudWatch logs and Andes table data into searchable knowledge base that supports real-time debugging assistance</li>
+                </ul>
+            </div>
         </div>
     </section>
 
@@ -33,6 +54,18 @@
             <h2>Featured Projects</h2>
             <div class="projects-grid">
                 <!-- Project 1 -->
+                <div class="project-card" onclick="window.open('./assets/Multimodal_Test_Time_Scaling_via_Visual_Augmentation.pdf')">
+                    <img src="./assets/Diagram.png" alt="Project 2"/>
+                    <div class="project-content">
+                        <h3>Multimodal Test Time Scaling</h3>
+                        <p>VLM research under Dr. Chun-Liang Li at Apple!</p>
+                        <div class="project-tags">
+                            <span class="tag">PyTorch</span>
+                            <span class="tag">Python</span>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="project-card" onclick="location.href='https://github.com/yerffejseel/Book-Notes'">
                     <img src="./assets/book.jpg" alt="Project 1"/>
                     <div class="project-content">
@@ -117,7 +150,7 @@
             <img src="./assets/cv.png" 
                 alt="Resume"
                 class="icons"
-                onclick="window.open('./assets/Jeffrey Lee Resume.pdf')">
+                onclick="window.open('./assets/Jeffrey_Lee_Resume.pdf')">
             <img src="./assets/github.png" 
                 alt="Github"
                 class="icons"

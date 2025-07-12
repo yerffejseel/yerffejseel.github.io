@@ -96,6 +96,74 @@ h2 {
     transform: none; /* Remove any transform */
     transition: none; /* Remove transition */
 }
+
+/* Experience Section */
+.experience {
+    padding: 5rem 0;
+    background-color: white;
+}
+
+.experience-card {
+    background-color: white;
+    border-radius: 0.75rem;
+    padding: 2.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #4f46e5;
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.experience-title {
+    flex: 1;
+    min-width: 250px;
+}
+
+.experience-title h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1a202c;
+    margin-bottom: 0.25rem;
+}
+
+.experience-title .company {
+    font-size: 1.25rem;
+    color: #4f46e5;
+    font-weight: 600;
+}
+
+.experience-date {
+    color: #6b7280;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.experience-achievements {
+    list-style: none;
+    padding: 0;
+}
+
+.experience-achievements li {
+    color: #4a5568;
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.experience-achievements li:before {
+    content: "▸";
+    color: #4f46e5;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
 /* Projects Section */
 .projects {
     padding: 5rem 0;
@@ -195,6 +263,7 @@ h2 {
 /* Contact Section */
 .contact {
     padding: 5rem 0;
+    background-color: #f8f9fa;
     text-align: center;
 }
 
@@ -262,33 +331,11 @@ footer {
     transition: all 1s;
 }
 
-
 .show {
     opacity: 1;
     transform: translateY(0);
 }
 
-
-
 .delay-1 { transition-delay: 200ms; }
 .delay-2 { transition-delay: 400ms; }
 .delay-3 { transition-delay: 600ms; }
-
-/* Media Queries */
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 3rem;
-    }
-
-    .hero p {
-        font-size: 1.25rem;
-    }
-
-    h2 {
-        font-size: 2rem;
-    }
-
-    .container {
-        padding: 0 1rem;
-    }
-}

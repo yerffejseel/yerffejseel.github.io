@@ -50,4 +50,9 @@ window.addEventListener('DOMContentLoaded', () => {
         observer.observe(card);
     });
 
+    // Add experience card animation
+    document.querySelectorAll('.experience-card').forEach((card, index) => {
+        card.classList.add('hidden', `delay-${index + 1}`);
+        observer.observe(card);
+    });
 });

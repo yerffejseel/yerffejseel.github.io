@@ -3,165 +3,229 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jeffrey Lee - Portfolio</title>
+    <title>Jeffrey Lee</title>
+    <meta name="description" content="Jeffrey Lee. Computer science at the University of Washington. Software engineer interning at Amazon, researching multimodal models with Apple, joining Meta in Summer 2026.">
+    <meta name="theme-color" content="#101216">
+    <meta name="color-scheme" content="dark">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap">
+
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
-    <!-- Header/Hero Section -->
-    <header class="hero">
-        <div class="hero-content">
-            <h1 id="title">Jeffrey Lee</h1>
-            <p id="subtitle">Software Engineer</p>
-        </div>
+    <a href="#work" class="skip-link">Skip to content</a>
+
+    <header class="topbar" aria-label="Site">
+        <a href="#top" class="topbar-mark" aria-label="Jeffrey Lee, top of page">JL<span class="topbar-dot" aria-hidden="true">.</span></a>
+        <nav class="topbar-nav" aria-label="Primary">
+            <a href="#work">Work</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
 
-    <!-- About Section -->
-    <section class="about">
-        <div class="container" id="bio">
-            <div id="description">
-                <h2>About Me</h2>
-                <p>Hello! I'm Jeffrey Lee, a Computer Science student at the University of Washington with a passion for software engineering. As a junior at UW, I've gotten the opportunity to explore a variety of topics, including frontend, backend, cloud, and ML topics. Besides coding, I enjoy going to the gym, going on walks, eating good food, and playing basketball! </p>
+    <main id="top">
+        <section class="hero" aria-labelledby="hero-name">
+            <p class="hero-eyebrow">
+                <span class="dot" aria-hidden="true"></span>
+                <span>Joining Meta, Summer 2026</span>
+            </p>
+
+            <h1 id="hero-name" class="hero-name">Jeffrey Lee<span class="hero-period" aria-hidden="true">.</span></h1>
+
+            <p class="hero-statement">
+                A junior at the University of Washington studying computer science. Most recently a software engineer intern at Amazon and a vision-language research collaborator with Dr. Chun-Liang Li at Apple. Joining Meta as a software engineer intern in Summer 2026.
+            </p>
+
+            <p class="hero-meta">
+                <span>San Francisco Bay Area</span>
+                <span class="hero-meta-dot" aria-hidden="true"></span>
+                <span>Software engineer</span>
+                <span class="hero-meta-dot" aria-hidden="true"></span>
+                <span>UW &rsquo;27</span>
+            </p>
+
+            <p class="hero-fold" aria-hidden="true">Scroll <span class="hero-arrow">&darr;</span></p>
+        </section>
+
+        <section class="work" id="work" aria-label="Work">
+            <header class="section-head">
+                <p class="section-mark">Recent work</p>
+                <h2 class="section-title">Two internships, a research project, and a classroom.</h2>
+            </header>
+
+            <article class="role role--small">
+                <div class="role-body">
+                    <p class="role-mark">Summer 2026 &middot; Incoming</p>
+                    <h3 class="role-title">Software Engineer Intern, Meta</h3>
+                    <p class="role-team">Menlo Park, CA.</p>
+                    <p>Joining the Meta software engineering intern program for summer 2026.</p>
+                </div>
+            </article>
+
+            <article class="role role--right">
+                <figure class="role-figure">
+                    <img src="https://images.unsplash.com/photo-1643083348068-f81ae31d055a?auto=format&amp;fit=crop&amp;w=1280&amp;q=80" alt="The Amazon Spheres glass domes in downtown Seattle." class="role-image" loading="lazy" decoding="async">
+                    <figcaption class="role-caption">AWS service mesh, illustrative.</figcaption>
+                </figure>
+                <div class="role-body">
+                    <p class="role-mark">Summer 2025</p>
+                    <h3 class="role-title">Software Development Engineer Intern, Amazon</h3>
+                    <p class="role-team">Scaling Planner team. Sunnyvale, CA.</p>
+                    <p>Built automated scaling solutions on the Scaling Planner team to optimize AWS resource allocation, then designed an <em>AI-powered diagnostic assistant</em> on top to streamline service-owner workflows. The assistant runs on a Python Lambda orchestrator with a retrieval-augmented pipeline, fusing platform documentation and live operational data to answer questions in context. A separate ingestion pipeline vectorizes data from <strong>seven internal microservices</strong> into OpenSearch and S3 for real-time k-NN retrieval.</p>
+                    <ul class="role-stats">
+                        <li><strong>50</strong>/day average interactions</li>
+                        <li><strong>80%+</strong> contextual accuracy</li>
+                        <li><strong>7+</strong> microservices ingested</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="role role--left">
+                <figure class="role-figure">
+                    <img src="https://images.unsplash.com/photo-1750969185331-e03829f72c7d?auto=format&amp;fit=crop&amp;w=1280&amp;q=80" alt="Abstract blue lines and dots on a dark background, neural-network-like." class="role-image" loading="lazy" decoding="async">
+                    <figcaption class="role-caption">Vision-language augmentation, study.</figcaption>
+                </figure>
+                <div class="role-body">
+                    <p class="role-mark">Spring 2025</p>
+                    <h3 class="role-title">Research Collaborator, Apple</h3>
+                    <p class="role-team">Vision-language research with Dr. Chun-Liang Li, in CSE 493.</p>
+                    <p>Researched vision-centric test-time scaling for VLMs using Visual Sketchpad-inspired augmentations (depth maps, segmentation masks, crops). Built an experimental pipeline with LLaVA-OneVision and MMBench to evaluate three augmentation strategies, then a hybrid system pairing GPT-4o-mini augmentation planning with LLaVA-OneVision inference as a lightweight alternative to full Visual Sketchpad methods. Wrote <a href="./assets/Multimodal_Test_Time_Scaling_via_Visual_Augmentation.pdf" target="_blank" rel="noopener">a project</a> on the work.</p>
+                    <ul class="role-stats">
+                        <li><strong>+1.37%</strong> VLM accuracy</li>
+                        <li><strong>33&times;</strong> inference cost efficiency</li>
+                        <li><strong>3</strong> augmentation strategies evaluated</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="role role--small">
+                <div class="role-body">
+                    <p class="role-mark">2024 to 2025 academic year</p>
+                    <h3 class="role-title">Co-Lecturer and Teaching Assistant, Interactive Intelligence</h3>
+                    <p class="role-team">University of Washington. Seattle.</p>
+                    <p>Formulated <strong>13</strong> AI coding projects covering neural networks, reinforcement learning, and NLP for <strong>100+</strong> students. Led <strong>5+</strong> lectures on transformers, RLHF, and multimodal learning, building <strong>10+</strong> slide presentations along the way.</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="projects" id="projects" aria-label="Selected work">
+            <header class="section-head">
+                <p class="section-mark">Selected work</p>
+                <h2 class="section-title">A few things built from scratch.</h2>
+            </header>
+
+            <article class="project project--lead">
+                <a href="https://github.com/josephvtranx/synthetic-society" class="project-link" target="_blank" rel="noopener">
+                    <figure class="project-figure project-figure--graph">
+                        <svg class="project-graph" viewBox="0 0 1600 1000" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="An abstract graph of nodes and edges, illustrative of a synthetic social network.">
+                            <g class="graph-edges">
+                                <line x1="220" y1="280" x2="360" y2="200"/>
+                                <line x1="220" y1="280" x2="320" y2="420"/>
+                                <line x1="360" y1="200" x2="320" y2="420"/>
+                                <line x1="360" y1="200" x2="480" y2="320"/>
+                                <line x1="320" y1="420" x2="480" y2="320"/>
+                                <line x1="320" y1="420" x2="240" y2="580"/>
+                                <line x1="480" y1="320" x2="240" y2="580"/>
+                                <line x1="480" y1="320" x2="720" y2="300"/>
+                                <line x1="240" y1="580" x2="760" y2="540"/>
+                                <line x1="720" y1="300" x2="760" y2="540"/>
+                                <line x1="720" y1="300" x2="1080" y2="280"/>
+                                <line x1="760" y1="540" x2="1180" y2="460"/>
+                                <line x1="1080" y1="280" x2="1240" y2="220"/>
+                                <line x1="1080" y1="280" x2="1180" y2="460"/>
+                                <line x1="1240" y1="220" x2="1380" y2="380"/>
+                                <line x1="1180" y1="460" x2="1380" y2="380"/>
+                                <line x1="1180" y1="460" x2="1320" y2="600"/>
+                                <line x1="1380" y1="380" x2="1320" y2="600"/>
+                            </g>
+                            <g class="graph-nodes">
+                                <circle cx="220" cy="280" r="14"/>
+                                <circle cx="360" cy="200" r="14"/>
+                                <circle cx="320" cy="420" r="14"/>
+                                <circle cx="480" cy="320" r="20" class="accent"/>
+                                <circle cx="240" cy="580" r="14"/>
+                                <circle cx="720" cy="300" r="16"/>
+                                <circle cx="760" cy="540" r="14"/>
+                                <circle cx="1080" cy="280" r="14"/>
+                                <circle cx="1240" cy="220" r="14"/>
+                                <circle cx="1180" cy="460" r="18"/>
+                                <circle cx="1380" cy="380" r="14"/>
+                                <circle cx="1320" cy="600" r="14"/>
+                            </g>
+                        </svg>
+                    </figure>
+                    <div class="project-body">
+                        <p class="project-mark">Hacktech 2026 &middot; Listen Labs finalist</p>
+                        <h3 class="project-title">Synthetic Society</h3>
+                        <p>An LLM-driven simulation of how opinions propagate through a social graph. Each agent is given a distinct personality and an initial belief; users introduce a topic and watch the network shift, with the simulation distinguishing genuine belief change from mere agreeableness. Built in a hackathon weekend with TypeScript on the front and Python on the back. Finalist for the Listen Labs &ldquo;simulate humans or societies&rdquo; track.</p>
+                        <p class="project-action">View on GitHub <span aria-hidden="true">&rarr;</span></p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="project project--lead project--reverse">
+                <a href="https://github.com/yerffejseel/Solace-AI" class="project-link" target="_blank" rel="noopener">
+                    <figure class="project-figure">
+                        <img src="https://images.unsplash.com/photo-1554757387-fa0367573d09?auto=format&amp;fit=crop&amp;w=1600&amp;q=80" alt="An open notebook on a wooden table." class="project-image" loading="lazy" decoding="async">
+                    </figure>
+                    <div class="project-body">
+                        <p class="project-mark">March 2025 &middot; Shipped on the App Store</p>
+                        <h3 class="project-title">Solace AI</h3>
+                        <p>An AI-powered journaling app on the Apple App Store. Built with React Native and TypeScript on the front, an Express and PostgreSQL backend on AWS EC2 and RDS in back, with OpenAI GPT-4o-mini wired in for real-time entry analysis, mood tracking, and personalized insights. Custom prompt engineering and multi-dialogue memory make replies feel continuous across sessions.</p>
+                        <p class="project-stats">
+                            <span><strong>100+</strong> registered users</span>
+                            <span class="project-stats-dot" aria-hidden="true"></span>
+                            <span><strong>400+</strong> entries processed</span>
+                        </p>
+                        <p class="project-action">View on GitHub <span aria-hidden="true">&rarr;</span></p>
+                    </div>
+                </a>
+            </article>
+
+            <article class="project project--lead">
+                <a href="https://github.com/yerffejseel/Convolutional-Neural-Network/tree/main" class="project-link" target="_blank" rel="noopener">
+                    <figure class="project-figure">
+                        <img src="https://images.unsplash.com/photo-1520445694166-4a2ca1ba362f?auto=format&amp;fit=crop&amp;w=1600&amp;q=80" alt="A multicolored pixel display on a black background, evoking image classification." class="project-image" loading="lazy" decoding="async">
+                    </figure>
+                    <div class="project-body">
+                        <p class="project-mark">April 2024 &middot; Computer vision</p>
+                        <h3 class="project-title">Advanced Image Classifier</h3>
+                        <p>A custom ResNet-style CNN with residual connections, data augmentation, and batch normalization, trained from scratch in PyTorch on the CIFAR-10 dataset (60,000 images across 10 categories). Reached <strong>90%</strong> test accuracy in ten epochs through architecture choices and hyperparameter tuning.</p>
+                        <p class="project-action">On GitHub <span aria-hidden="true">&rarr;</span></p>
+                    </div>
+                </a>
+            </article>
+        </section>
+
+        <section class="closing" id="contact" aria-label="About and contact">
+            <div class="closing-row">
+                <div class="closing-block">
+                    <p class="section-mark">A note</p>
+                    <p class="closing-prose">Outside the laptop: the gym, long walks, basketball when there is a court free, and the Chinese Student Association at UW, where I serve as president. The most interesting work, to me, sits at the seam where models, services, and people meet inside a single running system.</p>
+                </div>
+
+                <div class="closing-block">
+                    <p class="section-mark">Get in touch</p>
+                    <p class="closing-lead">Joining Meta in <em>Summer 2026</em>. Open to full-time SWE roles after graduation in 2027, research collaborations.</p>
+                    <ul class="reach">
+                        <li><a href="mailto:jeffreylee6225@gmail.com">jeffreylee6225&#64;gmail.com</a></li>
+                        <li><a href="https://www.linkedin.com/in/jeffreylee622/" target="_blank" rel="noopener">LinkedIn</a></li>
+                        <li><a href="https://github.com/yerffejseel" target="_blank" rel="noopener">GitHub</a></li>
+                        <li><a href="./assets/Jeffrey_Lee_Resume.pdf" target="_blank" rel="noopener">R&eacute;sum&eacute;</a></li>
+                    </ul>
+                </div>
             </div>
-            <img src="./assets/about-me picture.jpeg" alt="About Me Picture" id="about-pic">
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Experience Section -->
-    <section class="experience">
-        <div class="container">
-            <h2>Experience</h2>
-            <div class="experience-card">
-                <div class="experience-header">
-                    <div class="experience-title">
-                        <h3>Software Development Engineer Intern</h3>
-                        <div class="company">Amazon</div>
-                    </div>
-                    <div class="experience-date">June 2025 - Present</div>
-                </div>
-                <ul class="experience-achievements">
-                    <li>Developing automated scaling solutions on Scaling Planner team to optimize AWS resource allocation, while creating AI-powered assistant that enhanced service diagnosis workflows, achieving 50% adoption among service-owners</li>
-                    <li>Implemented Python Lambda orchestrator to power the AI assistant, implementing an RAG pipeline that synthesizes Scaling Planner documentation and operational data with Claude LLM, achieving 80% accuracy in contextual responses</li>
-                    <li>Designed data ingestion system to process and vectorize information from 7+ microservices, transforming CloudWatch logs and Andes table data into searchable knowledge base that supports real-time debugging assistance</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="projects">
-        <div class="container">
-            <h2>Featured Projects</h2>
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card" onclick="window.open('./assets/Multimodal_Test_Time_Scaling_via_Visual_Augmentation.pdf')">
-                    <img src="./assets/Diagram.png" alt="Project 2"/>
-                    <div class="project-content">
-                        <h3>Multimodal Test Time Scaling</h3>
-                        <p>VLM research under Dr. Chun-Liang Li at Apple!</p>
-                        <div class="project-tags">
-                            <span class="tag">PyTorch</span>
-                            <span class="tag">Python</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" onclick="location.href='https://github.com/yerffejseel/Book-Notes'">
-                    <img src="./assets/book.jpg" alt="Project 1"/>
-                    <div class="project-content">
-                        <h3>Book Notes</h3>
-                        <p>Web app to allow users to track their books read and review them!</p>
-                        <div class="project-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">Node.js</span>
-                            <span class="tag">Express.js</span>
-                            <span class="tag">PostgreSQL</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="project-card" onclick="location.href='https://github.com/yerffejseel/Convolutional-Neural-Network/tree/main'">
-                    <img src="./assets/Neural.jpg" alt="Project 2"/>
-                    <div class="project-content">
-                        <h3>Object Identifier</h3>
-                        <p>Computer vision model that identifies images from CIFAR-10!</p>
-                        <div class="project-tags">
-                            <span class="tag">PyTorch</span>
-                            <span class="tag">Python</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="project-card" onclick="location.href='https://github.com/yerffejseel/Workout-Web-App'">
-                    <img src="./assets/dumbbell.jpeg" alt="Project 3"/>
-                    <div class="project-content">
-                        <h3>Workout App</h3>
-                        <p>Allows users to track their workout progress!</p>
-                        <div class="project-tags">
-                            <span class="tag">React.js</span>
-                            <span class="tag">Node.js</span>
-                            <span class="tag">Express.js</span>
-                            <span class="tag">MongoDB</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section class="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <div class="skill-icon">💻</div>
-                    <h3>Frontend</h3>
-                    <p>HTML, CSS, JavaScript, React, React Native</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">⚙️</div>
-                    <h3>Backend</h3>
-                    <p>Node.js, Express.js, PostgreSQL, SQL</p>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">🛠️</div>
-                    <h3>General Purpose</h3>
-                    <p>Python, Java</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact">
-        <div class="container">
-            <h2>Get In Touch</h2>
-            <p>I'm always open to discussing new projects and opportunities. Below are some of my links.</p>
-            <a href="mailto:jeffreylee6225@gmail.com" class="cta-button">Send me an email</a>
-        </div>
-        <div class="links">
-            <img src="./assets/linkedin.png" 
-                alt="LinkedIn"
-                class="icons"
-                onclick="location.href='https://www.linkedin.com/in/jeffreylee622/'">
-            <img src="./assets/cv.png" 
-                alt="Resume"
-                class="icons"
-                onclick="window.open('./assets/Jeffrey_Lee_Resume.pdf')">
-            <img src="./assets/github.png" 
-                alt="Github"
-                class="icons"
-                onclick="location.href='https://github.com/yerffejseel'">    
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 Jeffrey Lee. All rights reserved.</p>
+    <footer class="site-foot">
+        <p>&copy; 2026 Jeffrey Lee.</p>
     </footer>
+
+    <script src="script.js" defer></script>
 </body>
-<script src="script.js"></script>
 </html>
